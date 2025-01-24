@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D41571092D443C0400978FE1 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = D41571082D443C0400978FE1 /* LaunchAtLogin */; };
 		D440F5802D441ADD00AFDB2A /* OpenMultitouchSupport in Frameworks */ = {isa = PBXBuildFile; productRef = D440F57F2D441ADD00AFDB2A /* OpenMultitouchSupport */; };
 		D440F5822D44290F00AFDB2A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D440F5812D44290900AFDB2A /* .gitignore */; };
 /* End PBXBuildFile section */
@@ -29,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D41571092D443C0400978FE1 /* LaunchAtLogin in Frameworks */,
 				D440F5802D441ADD00AFDB2A /* OpenMultitouchSupport in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,6 +76,7 @@
 			name = tb_resizer;
 			packageProductDependencies = (
 				D440F57F2D441ADD00AFDB2A /* OpenMultitouchSupport */,
+				D41571082D443C0400978FE1 /* LaunchAtLogin */,
 			);
 			productName = tb_resizer;
 			productReference = D440F5502D441AA700AFDB2A /* tb_resizer.app */;
@@ -105,6 +108,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				D440F57E2D441ADD00AFDB2A /* XCRemoteSwiftPackageReference "OpenMultitouchSupport" */,
+				D41571072D443C0400978FE1 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D440F5512D441AA700AFDB2A /* Products */;
@@ -332,6 +336,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		D41571072D443C0400978FE1 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin-Modern";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		D440F57E2D441ADD00AFDB2A /* XCRemoteSwiftPackageReference "OpenMultitouchSupport" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Kyome22/OpenMultitouchSupport";
@@ -343,6 +355,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		D41571082D443C0400978FE1 /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D41571072D443C0400978FE1 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */;
+			productName = LaunchAtLogin;
+		};
 		D440F57F2D441ADD00AFDB2A /* OpenMultitouchSupport */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D440F57E2D441ADD00AFDB2A /* XCRemoteSwiftPackageReference "OpenMultitouchSupport" */;

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import LaunchAtLogin
 
 // this handles 
 
@@ -37,6 +38,8 @@ struct swiftui_menu_barApp: App {
             .keyboardShortcut(",")
             
             Divider()
+            
+            LaunchAtLogin.Toggle()
             
             Button("Quit") {
                 
