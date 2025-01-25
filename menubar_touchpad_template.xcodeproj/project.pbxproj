@@ -10,11 +10,13 @@
 		D41571092D443C0400978FE1 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = D41571082D443C0400978FE1 /* LaunchAtLogin */; };
 		D440F5802D441ADD00AFDB2A /* OpenMultitouchSupport in Frameworks */ = {isa = PBXBuildFile; productRef = D440F57F2D441ADD00AFDB2A /* OpenMultitouchSupport */; };
 		D440F5822D44290F00AFDB2A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D440F5812D44290900AFDB2A /* .gitignore */; };
+		D4D1F0682D45A6B400293583 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D4D1F0672D45A6B000293583 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D440F5502D441AA700AFDB2A /* tb_resizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tb_resizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D440F5812D44290900AFDB2A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D4D1F0672D45A6B000293583 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -42,6 +44,7 @@
 			isa = PBXGroup;
 			children = (
 				D440F5812D44290900AFDB2A /* .gitignore */,
+				D4D1F0672D45A6B000293583 /* README.md */,
 				D440F5522D441AA700AFDB2A /* tb_resizer */,
 				D440F5512D441AA700AFDB2A /* Products */,
 			);
@@ -97,7 +100,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D440F54B2D441AA700AFDB2A /* Build configuration list for PBXProject "tb_resizer" */;
+			buildConfigurationList = D440F54B2D441AA700AFDB2A /* Build configuration list for PBXProject "menubar_touchpad_template" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4D1F0682D45A6B400293583 /* README.md in Resources */,
 				D440F5822D44290F00AFDB2A /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,7 +319,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D440F54B2D441AA700AFDB2A /* Build configuration list for PBXProject "tb_resizer" */ = {
+		D440F54B2D441AA700AFDB2A /* Build configuration list for PBXProject "menubar_touchpad_template" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D440F5732D441AA900AFDB2A /* Debug */,
