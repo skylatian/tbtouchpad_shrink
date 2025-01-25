@@ -8,8 +8,9 @@
 import SwiftUI
 import LaunchAtLogin
 import OpenMultitouchSupport
+import Foundation
 
-// this handles the menu bar UI and settings window
+// this handles the menu bar UI and settings window, as well as app lifecyle
 
 @main
 struct swiftui_menu_barApp: App {
@@ -17,6 +18,8 @@ struct swiftui_menu_barApp: App {
     @State private var isSettingsWindowOpen: Bool = false
     @State private var settingsWindowController: NSWindowController?
     
+    @NSApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate // add AppDelegate for lifecycle managment
+
     init() {
         TouchpadListener.shared.start() // start the touchpad listening service
     }
@@ -48,7 +51,6 @@ struct swiftui_menu_barApp: App {
             
             Button("Quit") {
                 
-                TouchpadListener.shared.stop() // quit the touchpad listener prior to quitting the application
                 NSApplication.shared.terminate(nil)
                 
             }.keyboardShortcut("q")
@@ -79,5 +81,17 @@ struct swiftui_menu_barApp: App {
         
         // bring window to foreground
         NSApp.activate(ignoringOtherApps: true)
+    }
+}
+
+// MARK: - AppDelegate for NSApplication Lifecycle Management
+class AppDelegate: NSObject, NSApplicationDelegate {
+    func applicationWillTerminate(_ notification: Notification) {
+        TouchpadListener.shared.stop()
+        print("AppDelegate: Application is terminating. TouchpadListener stopped.")
+    }
+    
+    func applicationDidFinishLaunching(_ notification: Notification) {
+        print("AppDelegate: Application did finish launching.")
     }
 }
