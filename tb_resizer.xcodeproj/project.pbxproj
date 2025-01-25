@@ -100,7 +100,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D440F54B2D441AA700AFDB2A /* Build configuration list for PBXProject "menubar_touchpad_template" */;
+			buildConfigurationList = D440F54B2D441AA700AFDB2A /* Build configuration list for PBXProject "tb_resizer" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -319,7 +319,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D440F54B2D441AA700AFDB2A /* Build configuration list for PBXProject "menubar_touchpad_template" */ = {
+		D440F54B2D441AA700AFDB2A /* Build configuration list for PBXProject "tb_resizer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D440F5732D441AA900AFDB2A /* Debug */,
