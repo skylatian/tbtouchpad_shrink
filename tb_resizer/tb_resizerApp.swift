@@ -7,14 +7,19 @@
 
 import SwiftUI
 import LaunchAtLogin
+import OpenMultitouchSupport
 
-// this handles 
+// this handles the menu bar UI and settings window
 
 @main
 struct swiftui_menu_barApp: App {
     @State var currentNumber: String = "1"
     @State private var isSettingsWindowOpen: Bool = false
     @State private var settingsWindowController: NSWindowController?
+    
+    init() {
+        TouchpadListener.shared.start() // start the touchpad listening service
+    }
     
     var body: some Scene {
         
@@ -43,6 +48,7 @@ struct swiftui_menu_barApp: App {
             
             Button("Quit") {
                 
+                TouchpadListener.shared.stop() // quit the touchpad listener prior to quitting the application
                 NSApplication.shared.terminate(nil)
                 
             }.keyboardShortcut("q")

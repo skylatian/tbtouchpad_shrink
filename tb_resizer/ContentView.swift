@@ -4,10 +4,11 @@
 //
 //  Created by skylatian on 1/24/25.
 //
-//
-import SwiftUI
 
-// this file handles the visual (UI) components only
+import SwiftUI
+import LaunchAtLogin
+
+// this file handles the visual (UI) components only - in this case, just the settings *window*. We'll get back to this later
 
 struct SettingsView: View {
 
@@ -21,6 +22,7 @@ struct SettingsView: View {
                 closeWindow()
             }
             .padding()
+            LaunchAtLogin.Toggle()
         }
         .frame(minWidth: 300, minHeight: 200)
     }
@@ -28,12 +30,6 @@ struct SettingsView: View {
     // close the current settings window
     private func closeWindow() {
         NSApp.keyWindow?.close()
-    }
-}
-
-struct SettingsView_Previews: PreviewProvider {
-    static var previews: some View {
-        SettingsView()
     }
 }
 
