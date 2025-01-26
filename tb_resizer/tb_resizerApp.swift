@@ -13,7 +13,7 @@ import Foundation
 // this handles the menu bar UI and settings window, as well as app lifecyle
 
 @main
-struct swiftui_menu_barApp: App {
+struct tb_resizerApp: App {
     @State var currentNumber: String = "1"
     @State private var isSettingsWindowOpen: Bool = false
     @State private var settingsWindowController: NSWindowController?
@@ -65,7 +65,7 @@ struct swiftui_menu_barApp: App {
             settingsWindowController.window?.makeKeyAndOrderFront(nil)
         } else {
             // otherwise, make a new one
-            let settingsView = SettingsView()
+            let settingsView = VisualizationView()
             let window = NSWindow(
                 contentRect: NSRect(x: 0, y: 0, width: 400, height: 300),
                 styleMask: [.titled, .closable, .resizable],

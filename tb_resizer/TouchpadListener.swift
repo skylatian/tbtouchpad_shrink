@@ -1,5 +1,5 @@
 //
-//  bg_touch.swift
+//  TouchpadListener.swift
 //  tb_resizer
 //
 //  Created by skylatian on 1/24/25.
@@ -28,7 +28,10 @@ final class TouchpadListener: ObservableObject {
                 await MainActor.run { [weak self] in
                     self?.touchData = touchData
                     // this is where touch data is grabbed. if you want to do something with it, call a function here
-                    print(touchData)
+                    // print(touchData)
+                    touchData.forEach { touch in
+                        print("Touch ID: \(touch.id), State: \(touch.state.rawValue)")
+                    }
                 }
             }
         }
